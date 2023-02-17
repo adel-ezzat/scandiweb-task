@@ -1,7 +1,7 @@
 const { defineConfig } = require('@vue/cli-service')
 module.exports = defineConfig({
   transpileDependencies: true,
-  // publicPath: 'fronted/dist',
+  publicPath: 'fronted/dist',
   chainWebpack: config => {
     if(config.plugins.has('extract-css')) {
       const extractCSSPlugin = config.plugin('extract-css')
