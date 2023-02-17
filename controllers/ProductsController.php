@@ -2,14 +2,14 @@
 
 namespace Controllers;
 
-use http\jsonResponse;
-use models\{productRepository};
+use http\JsonResponse;
+use models\{ProductRepository};
 use validation\BookValidation;
 use validation\DVDValidation;
 use validation\FurnitureValidation;
 
 
-class ProductsController extends productRepository
+class ProductsController extends ProductRepository
 {
 
     public function __construct()
@@ -26,7 +26,7 @@ class ProductsController extends productRepository
     public function index()
     {
         $products = $this->getAllProducts();
-        echo (new jsonResponse())->response('200', $products);
+        echo (new JsonResponse())->response('200', $products);
     }
 
     public function store($request)
@@ -44,7 +44,7 @@ class ProductsController extends productRepository
         }
 
         if (!empty($validation)) {
-            echo (new jsonResponse())->response('403', $validation);
+            echo (new JsonResponse())->response('403', $validation);
             return;
         }
 

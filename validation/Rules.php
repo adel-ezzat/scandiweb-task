@@ -5,9 +5,9 @@ namespace validation;
 use database\Database;
 
 /**
- * validation rules
+ * validation Rules
  */
-class rules
+class Rules
 {
 
     protected array $errors = [];

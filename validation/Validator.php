@@ -5,7 +5,7 @@ namespace validation;
 /**
  * validation
  */
-class validator extends rules
+class Validator extends Rules
 {
     protected array $productAttributes;
     protected array $rules = [
@@ -26,7 +26,7 @@ class validator extends rules
     }
 
     /**
-     * validate request with rules
+     * validate request with Rules
      * @return array
      */
     public function validate(): array

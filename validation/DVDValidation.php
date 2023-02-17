@@ -7,7 +7,7 @@ class DVDValidation
     public function validate($request): array
     {
         {
-            return (new validator($request, [
+            return (new Validator($request, [
                 'size' => 'required|number'
             ]))->validate();
         }

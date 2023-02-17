@@ -2,7 +2,7 @@
 
 namespace http;
 
-class jsonResponse
+class JsonResponse
 {
     /**
      * encode attributes and return json

@@ -7,7 +7,7 @@ use database\Database;
 /**
  * product repository
  */
-class productRepository implements productRepositoryInterface
+class ProductRepository implements productRepositoryInterface
 {
     private Database $database;
 

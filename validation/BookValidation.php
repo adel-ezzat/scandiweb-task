@@ -7,7 +7,7 @@ class BookValidation
     public function validate($request): array
     {
         {
-            return (new validator($request, [
+            return (new Validator($request, [
                 'weight' => 'required|number'
             ]))->validate();
         }

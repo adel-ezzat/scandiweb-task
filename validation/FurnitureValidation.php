@@ -7,7 +7,7 @@ class FurnitureValidation
     public function validate($request): array
     {
         {
-            return (new validator($request, [
+            return (new Validator($request, [
                 'height' => 'required|number',
                 'width' => 'required|number',
                 'length' => 'required|number'
