@@ -3,10 +3,12 @@
 namespace Controllers;
 
 use http\JsonResponse;
-use models\{ProductRepository};
-use validation\BookValidation;
-use validation\DVDValidation;
-use validation\FurnitureValidation;
+use models\ProductRepository;
+use validation\{
+    BookValidation,
+    DVDValidation,
+    FurnitureValidation
+};
 
 
 class ProductsController extends ProductRepository
@@ -20,7 +22,7 @@ class ProductsController extends ProductRepository
     public function template()
     {
 
-        echo file_get_contents(__DIR__.'/../fronted/dist/index.html');
+        echo file_get_contents(__DIR__ . '/../fronted/dist/index.html');
     }
 
     public function index()
