@@ -22,9 +22,4 @@
 4. vuejs.
 5. bootstrap.
 
-
-## Demo
-
-`https://scandiweb.i3rby.com` [here](https://scandiweb.i3rby.com/).
-
-> by @adelezzatl
+> by @adel-ezzat
